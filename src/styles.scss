@@ -1,7 +1,41 @@
+:root {
+  /* Cores principais */
+  --color-background: #0d0d0d;
+  --color-surface: #1a1a1a;
+  --color-surface-elevated: #2a2a2a;
+  --color-primary: #1e90ff;         /* Azul vibrante */
+  --color-primary-light: #3ea0ff;
+  --color-primary-dark: #0066cc;
+
+  /* Texto */
+  --color-text: #f5f5f5;            /* Texto principal (quase branco) */
+  --color-text-muted: #cccccc;      /* Texto secundário */
+  --color-text-inverted: #0d0d0d;   /* Para textos em botões claros, se necessário */
+
+  /* Estados */
+  --color-success: #4caf50;
+  --color-warning: #ff9800;
+  --color-error: #f44336;
+  --color-info: #2196f3;
+
+  /* Bordas e Divisores */
+  --color-border: #333333;
+  --color-divider: #262626;
+
+  /* Sombra */
+  --shadow-elevation: 0 2px 10px rgba(0, 0, 0, 0.6);
+
+  /* Gradientes opcionais */
+  --gradient-primary: linear-gradient(135deg, #1e90ff, #0066cc);
+  --gradient-background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    background: var(--color-background);
 }
 
 header, body {
