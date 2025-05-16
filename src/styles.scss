@@ -40,3 +40,7 @@ header, body {
     font-family: "Poppins", sans-serif;
     background: var(--color-background);
 }
+
+html {
+  scroll-behavior: smooth;
+}
