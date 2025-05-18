@@ -1,11 +1,19 @@
 main {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     
-    margin: 8rem 2rem;
-    height: 100vh;
+    padding-top: 6.5rem;
+
+    height: 100vh; 
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     gap: 2rem;
 }
 
@@ -13,16 +21,19 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 100%;
     color: var(--color-text-muted);
     margin: 0 3rem;
 
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft 1.5s ease-in forwards;
+
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -32,6 +43,10 @@ main {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInRight 1.5s ease-in forwards;
 }
 
 .profile {
@@ -94,20 +109,64 @@ main {
     }
 }
 
+.arrow-down {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    animation: bounce 2s infinite;
+
+    img {
+        width: 4rem;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @media (min-width: 768px) {
+    .about-me {
+        width: 50%;
+    }
+
+    .home-container {
+        flex-direction: row;
+    }
+
     .separator {
-        width: 200%;
+        width: 80%;
+    }
+
+    .arrow-down {
+        display: flex;
     }
 }
 
 @media (min-width: 1080px) {
-    main {
-        flex-direction: row;
-        margin: 0;
-    }
-
-    .about-me {     
-        width: 50%;   
+    .about-me {
         h1 {
             font-size: 2.5rem;
         }
@@ -123,10 +182,6 @@ main {
 }
 
 @media (min-width: 1310px) {
-    main {
-        justify-content: space-evenly;
-    }
-
     .separator {
         width: 100%;
     }
