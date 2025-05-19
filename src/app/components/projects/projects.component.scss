@@ -7,7 +7,7 @@ section {
     min-height: 100vh;
     overflow: hidden;
     
-    padding: 3rem;
+    padding: 7rem;
     gap: 3rem;
 
     background: var(--color-divider);
@@ -107,6 +107,12 @@ section {
         background: var(--color-primary-light);
     }
     
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 3rem;
+    }
 }
 
 @media (min-width: 1080px) {

@@ -16,6 +16,7 @@ header {
 }
 
 .logo {
+    display: none;
     font-size: 1.5rem;
     font-weight: 600;
 
@@ -27,7 +28,7 @@ header {
 }
 
 .menu {
-    display: none;
+    display: flex;
     gap: 1rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -73,28 +74,8 @@ header {
     }
 }
 
-
-
-.menu-list {
-    display: flex;
-    padding: 0.3rem;
-    border-radius: 50%;
-    background: var(--color-text);
-
-    cursor: pointer;
-    
-
-    img {
-        width: 3rem;
-    }
-}
-
 @media (min-width: 768px) {
-    .menu {
+    .logo {
         display: flex;
-    }
-
-    .menu-list {
-        display: none;
     }
 }
