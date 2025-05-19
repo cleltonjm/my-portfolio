@@ -30,7 +30,7 @@ header {
 .menu {
     display: flex;
     gap: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 
     a {
@@ -75,6 +75,10 @@ header {
 }
 
 @media (min-width: 768px) {
+    .menu {
+        font-size: 1.2rem;
+    }
+
     .logo {
         display: flex;
     }

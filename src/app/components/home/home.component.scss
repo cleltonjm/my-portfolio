@@ -31,11 +31,11 @@ main {
     animation: fadeInLeft 1.5s ease-in forwards;
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -164,6 +164,18 @@ main {
 
     .arrow-down {
         display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-me {
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
     }
 }
 
