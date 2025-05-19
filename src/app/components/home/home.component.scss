@@ -4,9 +4,11 @@ main {
     justify-content: space-evenly;
     flex-direction: column;
     
-    padding-top: 6.5rem;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
 
-    height: 100vh; 
+    min-height: 100vh;
+    overflow: auto;
 }
 
 .home-container {
